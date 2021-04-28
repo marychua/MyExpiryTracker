@@ -1,0 +1,80 @@
+ <div class="page">
+    <div class="header white">
+      <div class="left">
+        <button class="text-black icon ion-ios-arrow-back" onclick="backPage()"></button>
+      </div>
+      <h1 class="title align-center">Search Item</h1>
+      <div class="right">
+        <button class="text-black icon ion-android-options" onclick="openMenu('filter')"></button>
+      </div>
+    </div>
+
+    <div class="content has-header">
+      <div class="list">
+        <div class="item icon ion-search">
+          <!-- https://www.w3schools.com/jsref/event_onchange.asp -->
+          <input id="search-input" type="text" onchange="SearchItem()" placeholder="What expiry are you searching for?" >
+          <div class="right"> 
+            <button class="red-300 radius full text-white text-strong" onclick="SearchItem()">Apply</button>
+          </div>
+        </div>
+        <div class="space"></div>
+        <div id="search-list" class="search-list padding">
+          <div class="item">
+            <p class="textgrey1" style="text-transform: none;">No items to display</p>
+          </div>
+        </div>
+
+       
+    <!-- Filter Menu-->
+    <div class="menu menu-right white" id="filter">
+      <div class="list no-border">
+        <div class="item grey1">
+          <div class="left">
+            <i class="text-white icon ion-android-options"></i>
+          </div>
+          <h1 class="text-white">Filters</h1>
+        </div>
+        <div class="item">
+          <label class="text-red-300 text-strong myfocus">Category Type</label>
+          <select id="search-category">
+            <option id="no-category" selected disabled hidden>Choose category</option>
+            <option id="Food">Food</option>
+            <option id="Pet">Pet</option>
+            <option id="Vehicle">Vehicle</option>
+            <option id="Insurance">Insurance</option>
+            <option id="Card">Card</option>
+            <option id="cleaning-supplies">Cleaning Supplies</option>
+            <option id="Toiletries">Toiletries</option>
+            <option id="Medication">Medication</option>
+            <option id="Others">Others</option>
+          </select>
+        </div>
+        <div class="item">
+          <label class="text-red-300 text-strong myfocus">Date</label>
+          <input id="search-date" type="date">
+        </div>
+        <div class="item">
+          <label class="text-red-300 text-strong myfocus">Cycle</label>
+          <select id="search-cycle">
+            <option id="no-cycle" selected disabled hidden>Choose cycle</option>
+            <option>Daily</option>
+            <option>Weekly</option>
+            <option>Monthly</option>
+            <option>Yearly</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <button class="red-300 radius full text-white text-strong" onclick="FilterItem()">Apply</button>
+          <button class="grey1 radius full text-white text-strong" onclick="clearMenu()">Clear</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Menu END -->
+
+      </div>
+    </div>
+</div>
+  

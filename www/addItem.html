@@ -1,0 +1,101 @@
+<div class="page">
+    <div class="header white">
+        <div class="left">
+            <button class="text-black icon ion-ios-arrow-back" onclick="backPage()"></button>
+        </div>
+        <h1 class="title align-center">Add Item</h1>
+    </div>
+    <div class="content has-header">
+        <div class="list">
+            <div class="item label-fixed">
+                <label class="text-red-300 text-strong"><i class="red-300 icon ion-grid pr-5"></i>Category</label>
+                <select id="expiry-category">
+            <option id="no-category" selected disabled hidden>Choose category</option>
+            <option id="food">Food</option>
+            <option id="pet">Pet</option>
+            <option id="vehicle">Vehicle</option>
+            <option id="insurance">Insurance</option>
+            <option id="card">Card</option>
+            <option id="cleaning-supplies">Cleaning Supplies</option>
+            <option id="toiletries">Toiletries</option>
+            <option id="medication">Medication</option>
+            <option id="others">Others</option>
+          </select>
+            </div>
+            <div class="item label-fixed">
+                <label class="text-red-300 text-strong"><i class="red-300 icon ion-ios-pricetag pr-5"></i>Title</label>
+                <input type="text" id="expiry-title" placeholder="Enter expiry title">
+            </div>
+            <div class="item label-fixed">
+                <label class="text-red-300 text-strong"><i class="text-red-300 icon ion-android-calendar pr-5"></i>Date</label>
+                <input type="date" id="expiry-date">
+            </div>
+            <div class="item label-fixed">
+                <label class="text-red-300 text-strong"><i class="red-300 icon ion-loop pr-5"></i>Cycle</label>
+                <select id="expiry-cycle">
+            <option id="no-cycle" selected disabled hidden>Choose cycle</option>
+            <option id="daily">Daily</option>
+            <option id="weekly">Weekly</option>
+            <option id="monthly">Monthly</option>
+            <option id="yearly">Yearly</option>
+          </select>
+            </div>
+            <div class="item label-fixed">
+                <label class="text-red-300 text-strong"><i class="text-red-300 icon ion-social-usd pr-5"></i>Price</label>
+                <input type="number" id="expiry-price" placeholder="Enter expiry price">
+            </div>
+            <div class="item label-fixed" style="border-bottom: none;padding-bottom: 0px;">
+                <label class="text-red-300 text-strong"><i class="text-red-300 icon ion-ios-paper pr-5"></i>Notes</label>
+                <textarea id="expiry-notes" rows="4" cols="50" style="padding-bottom: 0px;" placeholder="Enter expiry notes (optional)"></textarea>
+            </div>
+
+            <div class="item label-fixed">
+                <label class="text-red-300 text-strong"><i class="red-300 icon ion-ios-clock pr-5"></i>Reminder</label>
+                <div class="row">
+                    <div class="col-34">
+                        <input class="align-center" id="expiry-reminder-1" type="number" placeholder="0">
+                    </div>
+                    <div class="col">
+                        <select id="expiry-reminder-2">
+                <option id="no-duration" selected disabled hidden>Choose duration</option>
+                <option id="hour">Hour(s)</option>
+                <option id="day">Day(s)</option>
+                <option id="week">Week(s)</option>
+                <option id="month">Month(s)</option>
+                <option id="year">Year(s)</option>
+              </select>
+                    </div>
+                </div>
+            </div>
+            <div class="item label-fixed">
+                <label class="text-red-300 text-strong"><i class="red-300 icon ion-paintbucket pr-5"></i>Color</label>
+                <select id="color-label">
+            <option value="0" selected>Grey</option>
+           
+            <option value="1" id="red">Red</option>
+            <option value="2" id="blue">Blue</option>
+            <option value="3" id="purple">Purple</option>
+            <option value="4" id="yellow">Yellow</option>
+            <option value="5" id="green">Green</option>
+            <option value="6" id="orange">Orange</option>
+            <option value="7" id="brown">Brown</option>
+            <option value="8" id="black">Black</option>
+          </select>
+            </div>
+            <div class="item">
+                <div class="list">
+                    <label class="text-red-300 text-strong"><i class="red-300 icon ion-ios-clock pr-5"></i>Selected Photo</label>
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/camera-placeholder.jpg" class="radius padding align-center" id="photo" onclick="takePhoto()">
+                            <button class="text-black icon ion-close-circled clear-photo hidden" id="clearPhotoBtn" onclick="clearPhoto()"><i class="white"></i>Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="red-300 radius full text-white text-strong" onclick="AddItem()">Confirm</button>
+            </div>
+
+        </div>
+    </div>

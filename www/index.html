@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/fonts.css">
+        <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>My Expiry Tracker</title>
+    </head>
+    <body class="content padding white view-page">
+        <div class="cover">
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-50 align-right">
+                  <img src="img/clock.png" style="margin-right: 13px;" width="100">
+                </div>
+                <div class="col">
+                    <div class="space"></div>
+                    <h1 class="align-left text-huge text-black text-strong" style="text-transform: capitalize;font-size: 1.5em;">MyExpiryTracker</h1>
+                    <p class="align-left text-small text-black" style="text-transform:none;font-size: 1.2em;">
+                      Track your item expiries efficiently</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="space"></div>
+          <div id="total" class="padding"></div>
+        <div id="list" class="list padding">
+            
+        </div>
+        <button class="text-white icon ion-plus red-300 circle shadow float-bottom-right" onclick="openPage('addItem')"><i class="white"></i></button>
+        <button class="text-white icon ion-search red-300 circle shadow float-bottom-right" style="margin-bottom: 48px;" onclick="openPage('searchItem')"><i class="white"></i></button>
+   
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
+
